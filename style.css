@@ -1,0 +1,28 @@
+body{
+    background-color: darkslategray;
+}
+.calculator-box{
+    display: flex;
+    background-color: rgb(5, 5, 49);
+    height: 300px;
+    width:450px;
+    margin-left:500px;
+    margin-top: 200px;
+}
+input{
+    background-color: rgb(255, 141, 2);
+    width: 389px;
+    height: 70px;
+    text-align: right;
+    font-size: 40px;
+}
+button{
+    height:56px;
+    width: 66px;
+}
+#equal{
+    height:300px;
+    padding-left:10px;
+    padding-bottom:10px;
+
+}

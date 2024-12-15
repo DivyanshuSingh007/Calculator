@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Calculator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="calculator-box">
+            <div class="display"><input type="text" id="in" placeholder="0" autofocus="autofocus">
+            <div class="buttons">
+                <div class="button-row">
+                    <button onclick="document.getElementById('in').value+='1'">1</button><button onclick="document.getElementById('in').value+='2'">2</button><button onclick="document.getElementById('in').value=3">3</button><button onclick="document.getElementById('in').value+='+'">+</button><button onclick="sin()">sin(x)</button><button onclick="cos()">cos(x)</button>
+                </div>
+                <div class="button-row"><button onclick="document.getElementById('in').value+=4">4</button><button onclick="document.getElementById('in').value+=5">5</button><button onclick="document.getElementById('in').value+=6">6</button><button onclick="document.getElementById('in').value+='-'">-</button><button onclick="tan()">tan(x)</button><button onclick="sqrt()">sqrt(x)</button>
+                </div>
+                <div class="button-row"><button onclick="document.getElementById('in').value+=7">7</button><button onclick="document.getElementById('in').value+=8">8</button><button onclick="document.getElementById('in').value+=9">9</button><button onclick="document.getElementById('in').value+='/'">/</button><button onclick="fact()">!(x)</button><button onclick="cbrt()">cbrt(x)</button>
+                </div>
+                <div class="button-row"><button onclick="exp()">^</button><button>0</button><button onclick="per()">%</button><button onclick="clear_()">CLR</button><button onclick="ln()">ln(x)</button><button onclick="log()">log(x)</button>
+                </div>
+            </div>
+            </div>
+            <button onclick="result()" id="equal">=</button>
+        </div>
+        <script src="script.js" async defer></script>
+    </body>
+</html>
